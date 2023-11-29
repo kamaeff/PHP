@@ -31,7 +31,7 @@ require_once __DIR__ . '/inc/connection.php';
       <div class="main_math-res">
         <?php
         if ($status == false) {
-          echo '<br>Error: Данные должны быть заполнены!!!';
+          echo '<div>Error: Данные должны быть заполнены!!!</div>';
         } else {
           echo '
               <div>Ты ввел: a = ' . $object->a . ', b = ' . $object->b . '</div>

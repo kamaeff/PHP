@@ -49,6 +49,9 @@ class Math
 }
 
 if (isset($_POST['number_a']) && isset($_POST['number_b'])) {
+  if($_POST['number_a'] == '' || $_POST['number_b'] == '') {
+    return $status = false;
+  }
   $object = new Math($_POST['number_a'], $_POST['number_b']);
   return $status = true;
 } else {
