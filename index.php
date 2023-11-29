@@ -26,13 +26,12 @@
           if($status == false){
             echo '<br>Error: Данные должны быть заполнены!!!';
           }else{
-            echo '<div>Ты ввел: a = '. $object->a. ', b = '. $object->b. '</div>';
-            echo '';
-            echo '<div>Сумма = '. $object->sum(). '</div>';
-            echo '<div>Вычитание = '. $object->sub(). '</div>';
-            echo '<div>Умножение = '. $object->mult(). '</div>';
-            echo '<div>Деление = '. $object->div(). '</div>';
-            echo '<div>Остаток от деления = '. $object->mod(). '</div>';
+            echo '<div>Ты ввел: a = '. $object->a. ', b = '. $object->b. '</div>
+            <div>Сумма = '. $object->sum(). '</div>
+            <div>Вычитание = '. $object->sub(). '</div>
+            <div>Умножение = '. $object->mult(). '</div>
+            <div>Деление = '. $object->div(). '</div>
+            <div>Остаток от деления = '. $object->getmod(). '</div>';
           }
         ?>
       </div>

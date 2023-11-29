@@ -27,13 +27,16 @@ class Math{
     return $this->a / $this->b;
   }
 
-  public function mod(){
+  private function mod(){
     if ($this->a == 0 || $this->b == 0) {
       return 'a and b can not be 0';
     }else{
       return $this->a % $this->b;
     }
-    
+  }
+
+  public function getmod(){
+    return $this->mod();
   }
 }
 
